@@ -1,6 +1,6 @@
 // Find the total number of pairs in the Array whose sum is equal to the given value 'x'  ?
 
-let array = [2, 3, 4, 5, 6, 7, 8, 9]
+let array = [2, 3, 4, 5, 6, 7, 8, 9, 1]
     // let pair = 0
 
 // for (let i = 0; i < array.length; i++) {
@@ -17,7 +17,7 @@ let array = [2, 3, 4, 5, 6, 7, 8, 9]
 function TargetSum(x) {
     let pair = 0
     for (let i = 0; i < array.length; i++) {
-        for (let j = i + 1; j < array.length - 1; j++) {
+        for (let j = i + 1; j < array.length; j++) {
 
             if (array[i] + array[j] == x) {
                 pair = pair + 1;
